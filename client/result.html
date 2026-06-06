@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis Results - SkinMate</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💊</text></svg>">
+</head>
+<body class="result-page">
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="gradient-orb orb-1"></div>
+        <div class="gradient-orb orb-2"></div>
+    </div>
+
+    <!-- Top Navigation -->
+    <nav class="result-nav">
+        <div class="nav-container">
+            <a href="chatbot.html" class="back-btn">
+                <i class="fas fa-arrow-left"></i>
+                <span>Back to Analysis</span>
+            </a>
+            <a href="index.html" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-pump-medical"></i>
+                </div>
+                <span>SkinMate</span>
+            </a>
+            <div class="nav-actions">
+                <a href="dashboard.html" class="btn btn-primary btn-sm">
+                    <i class="fas fa-home"></i>
+                    Dashboard
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Results Container -->
+    <div class="result-container">
+        <div class="result-header">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h1>Analysis Complete!</h1>
+            <p>Your skin analysis has been processed successfully</p>
+        </div>
+
+        <div class="result-grid">
+            <!-- Score Card -->
+            <div class="result-card score-card">
+                <div class="card-header">
+                    <h3>Skin Health Score</h3>
+                </div>
+                <div class="score-display">
+                    <div class="score-circle">
+                        <svg viewBox="0 0 100 100">
+                            <circle class="score-bg" cx="50" cy="50" r="45"/>
+                            <circle class="score-progress" cx="50" cy="50" r="45"/>
+                        </svg>
+                        <div class="score-value">87</div>
+                    </div>
+                    <div class="score-label">Good Skin Health</div>
+                    <div class="score-breakdown">
+                        <div class="breakdown-item">
+                            <span class="breakdown-label">Acne</span>
+                            <div class="breakdown-bar">
+                                <div class="breakdown-fill" style="width: 92%"></div>
+                            </div>
+                            <span class="breakdown-value">92%</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span class="breakdown-label">Dryness</span>
+                            <div class="breakdown-bar">
+                                <div class="breakdown-fill" style="width: 67%"></div>
+                            </div>
+                            <span class="breakdown-value">67%</span>
+                        </div>
+                        <div class="breakdown-item">
+                            <span class="breakdown-label">Aging</span>
+                            <div class="breakdown-bar">
+                                <div class="breakdown-fill" style="width: 23%"></div>
+                            </div>
+                            <span class="breakdown-value">23%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Diagnosis Card -->
+            <div class="result-card diagnosis-card">
+                <div class="card-header">
+                    <h3>Diagnosis</h3>
+                </div>
+                <div class="diagnosis-list">
+                    <div class="diagnosis-item">
+                        <div class="diagnosis-icon severe">
+                            <i class="fas fa-exclamation-circle"></i>
+                        </div>
+                        <div class="diagnosis-content">
+                            <h4>Mild Acne (Grade II)</h4>
+                            <p>Moderate inflammatory acne with papules and pustules</p>
+                        </div>
+                    </div>
+                    <div class="diagnosis-item">
+                        <div class="diagnosis-icon moderate">
+                            <i class="fas fa-tint-slash"></i>
+                        </div>
+                        <div class="diagnosis-content">
+                            <h4>Dry Skin</h4>
+                            <p>Dehydrated skin barrier needing moisture</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Recommendations Card -->
+            <div class="result-card recommendations-card">
+                <div class="card-header">
+                    <h3>Recommended Products</h3>
+                </div>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <i class="fas fa-pump-soap"></i>
+                        </div>
+                        <div class="product-info">
+                            <h4>Gentle Cleanser</h4>
+                            <p>For sensitive & acne-prone skin</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>4.8</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <div class="product-info">
+                            <h4>Hydrating Serum</h4>
+                            <p>With hyaluronic acid</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <i class="fas fa-sun"></i>
+                        </div>
+                        <div class="product-info">
+                            <h4>SPF 50 Sunscreen</h4>
+                            <p>Non-greasy formula</p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>4.7</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Care Tips Card -->
+            <div class="result-card tips-card">
+                <div class="card-header">
+                    <h3>Skincare Routine</h3>
+                </div>
+                <div class="routine-timeline">
+                    <div class="routine-item">
+                        <div class="routine-time">Morning</div>
+                        <div class="routine-content">
+                            <h4>1. Cleanse</h4>
+                            <p>Use gentle cleanser with lukewarm water</p>
+                        </div>
+                    </div>
+                    <div class="routine-item">
+                        <div class="routine-time">Morning</div>
+                        <div class="routine-content">
+                            <h4>2. Moisturize</h4>
+                            <p>Apply hydrating serum + moisturizer</p>
+                        </div>
+                    </div>
+                    <div class="routine-item">
+                        <div class="routine-time">AM/PM</div>
+                        <div class="routine-content">
+                            <h4>3. Protect</h4>
+                            <p>Apply SPF 50 sunscreen daily</p>
+                        </div>
+                    </div>
+                    <div class="routine-item">
+                        <div class="routine-time">Night</div>
+                        <div class="routine-content">
+                            <h4>4. Treat</h4>
+                            <p>Use acne treatment if needed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Action Buttons -->
+        <div class="result-actions">
+            <a href="chatbot.html" class="btn btn-primary">
+                <i class="fas fa-redo"></i>
+                New Analysis
+            </a>
+            <a href="dashboard.html" class="btn btn-secondary">
+                <i class="fas fa-th-large"></i>
+                Go to Dashboard
+            </a>
+        </div>
+    </div>
+
+    <script src="js/skin.js"></script>
+</body>
+</html>
