@@ -1,6 +1,6 @@
 // SkinMate API Module
 
-const API_BASE_URL = '/api';
+const API_BASE_URL = 'https://skin-mate-web-app.onrender.com/api';
 
 // Generic API request handler
 async function apiRequest(endpoint, options = {}) {

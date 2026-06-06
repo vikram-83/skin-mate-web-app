@@ -109,7 +109,7 @@ function removeTypingIndicator() {
 async function getBotResponse(message) {
     try {
         // Try API first
-        const response = await fetch('/api/chat/message', {
+        const response = await fetch('https://skin-mate-web-app.onrender.com/api/chat/message', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

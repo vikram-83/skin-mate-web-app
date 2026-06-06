@@ -46,7 +46,7 @@ function updateUIForLoggedInUser(user) {
             profileLink.className = 'user-profile';
             profileLink.innerHTML = `<a href="#">${user.name || 'Profile'}</a>`;
             navLinks.appendChild(profileLink);
-        }
+        }   
     }
 }
 
@@ -66,7 +66,7 @@ async function apiCall(endpoint, options = {}) {
     const mergedOptions = { ...defaultOptions, ...options };
     
     try {
-        const response = await fetch(`/api${endpoint}`, mergedOptions);
+       const response = await fetch('https://skin-mate-web-app.onrender.com/api/products');
         const data = await response.json();
         
         if (!response.ok) {
@@ -107,7 +107,7 @@ function showNotification(message, type = 'info') {
 // Load and display products
 async function loadProducts() {
     try {
-        const response = await fetch('/api/products');
+        const response = await fetch('https://skin-mate-web-app.onrender.com/api/products');
         const data = await response.json();
         
         if (response.ok && data.products) {

@@ -143,7 +143,7 @@ async function handleLogin(e) {
     submitBtn.disabled = true;
     
     try {
-        const response = await fetch('http://localhost:3000/api/auth/login', {
+        const response = await fetch('https://skin-mate-web-app.onrender.com/api/auth/register', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -170,7 +170,7 @@ async function handleLogin(e) {
             }, 1000);
         } else {
             // Try registration endpoint as fallback for demo
-            const registerResponse = await fetch('http://localhost:3000/api/auth/register', {
+            const registerResponse = await fetch('https://skin-mate-web-app.onrender.com/api/auth/register', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
